@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="p1" class="parent">
+        <!-- ////1st row//// -->
+<h1 id="mainhead"></h1>
+        <div id="tp" >
+         
+          <p id="box1" onclick=" cross (this)" style="border-left: none; border-top: 0"></p>
+          <p id="box2" onclick=" cross (this)" style="border-top: none" ></p>
+          <p id="box3" onclick=" cross (this)" style="border-right: none; border-top: none"  ></p>
+        </div>
+        <!-- /////2nd////// -->
+        <div id="tp">
+          <p id="box4" onclick=" cross (this)" style="border-left: none"></p>
+          <p id="box5" onclick=" cross (this)" ></p>
+          <p id="box6" onclick=" cross (this)" style="border-right: none" ></p>
+        </div>
+
+
+        <!-- ///3rd row//// -->
+        <div id="tp">
+          <p id="box7" onclick=" cross (this)" style="border-left: none; border-bottom: none"></p>
+          <p id="box8" onclick=" cross (this)" style="border-bottom: none"></p>
+          <p id="box9" onclick=" cross (this)" style="border-bottom: none; border-right: none"></p>
+        </div>
+  
+      </div>
+
+      
+      <h1 id="h1"></h1>
+     
+      <div class="btns">
+      <button onclick=" restart()" id="btn">Play Again</button>
+    </div>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>
