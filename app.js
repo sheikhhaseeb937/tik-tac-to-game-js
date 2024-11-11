@@ -9,14 +9,14 @@ var box7 = document.getElementById('box7')
 var box8 = document.getElementById('box8')
 var box9 = document.getElementById('box9')
 
-var text = document.getElementById('h1')
+
 
 
 var parent =document.getElementById('p1')
 
 var headtext =document.getElementById("mainhead")
-
-
+var texth1 = document.getElementById("h1")
+var thead = document.getElementById("tp")
 
 
 flag = true
@@ -28,19 +28,19 @@ console.log('hey',ele)
 if(flag){
  ele.innerHTML = 'X'
 
-    flag = false
+   
    
     // console.log(boxtext)
     ele.classList.add('disable')
     ele.classList.add('eleText')
-  
+   flag = false
 
 }else{
     ele.innerHTML = 'O'
-    flag = true
+
     ele.classList.add('disable')
     ele.classList.add('eleText')
-
+    flag = true
     }
 
 
@@ -59,14 +59,28 @@ if(flag){
 
 
  )){
+texth1.innerHTML = "Player X win"
+    box1.classList.add('disable')
+    box2.classList.add('disable')
+    box3.classList.add('disable')
 
-    text.innerText = "Player X win"
+    box4.classList.add('disable')
+
+    box5.classList.add('disable')
+    box6.classList.add('disable')
+    box7.classList.add('disable')
+
+    box8.classList.add('disable')
+    box9.classList.add('disable')
+
+
+    
+
+
+
 
  
-        }
-
-
-if((box1.innerHTML == 'O' && box2.innerHTML == 'O'  &&  box3.innerHTML == 'O'  
+        }else if((box1.innerHTML == 'O' && box2.innerHTML == 'O'  &&  box3.innerHTML == 'O'  
             ||  box4.innerHTML == 'O' &&  box5.innerHTML == 'O'  &&  box6.innerHTML == 'O' 
             || box7.innerHTML == 'O'  &&  box8.innerHTML == 'O'  &&  box9.innerHTML == 'O'  
              || 
@@ -78,10 +92,29 @@ if((box1.innerHTML == 'O' && box2.innerHTML == 'O'  &&  box3.innerHTML == 'O'
             box3.innerHTML == 'O' && box5.innerHTML == 'O'  &&  box7.innerHTML == 'O')){
                 
                 
-             text.innerText = "Player O win"
-    
-           
+              texth1.innerHTML = "Player O win"
+             box1.classList.add('disable')
+    box2.classList.add('disable')
+    box3.classList.add('disable')
+
+    box4.classList.add('disable')
+
+    box5.classList.add('disable')
+    box6.classList.add('disable')
+    box7.classList.add('disable')
+
+    box8.classList.add('disable')
+    box9.classList.add('disable')
+
+thead.setAttribute('class',"bg")
+
+            
         }
+
+
+    
+        
+
 
 
  
